@@ -1,0 +1,46 @@
+.video {
+  display: flex;
+  flex-direction: column;
+  width: 340px;
+
+  &--inline {
+    flex-direction: row;
+    width: 100%;
+
+    .video {
+      &__description {
+        margin-left: 20px;
+        justify-content: center;
+        width: 40%;
+      }
+
+      &__title, &__channel, &__views {
+        white-space: normal;
+      }
+    }
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title, &__channel, &__views {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 4px;
+  }
+
+  &__title {
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 700;
+  }
+
+  &__channel, &__views {
+    font-size: 12px;
+    line-height: 12px;
+    opacity: 0.5;
+  }
+}

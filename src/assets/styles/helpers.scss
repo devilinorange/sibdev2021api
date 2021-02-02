@@ -1,0 +1,65 @@
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+};
+
+.flex-column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.display-none { display: none; }
+
+.font-size-18 { font-size: 18px; }
+
+// Margins
+@for $i from 0 through 15 {
+  .mb#{$i * 8} { margin-bottom: $i * 8px; }
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+// Paddings
+@for $i from 0 through 10 {
+  .py#{$i * 8} { padding-top: $i * 8px; padding-bottom: $i * 8px; }
+}
+
+@for $i from 0 through 10 {
+  .pt#{$i * 8} { padding-top: $i * 8px; }
+}
+
+// Background
+.bg-white { background: white; }
+
+.bg-main { background: $main-background-color; }
+
+// Width
+.width100p { width: 100% };
+
+// Height
+.min-height-100vh { min-height: 100vh; }
+
+// Borders
+.border-bottom { border-bottom: 1px solid $border-color; }
+
+// Text align
+.text-align-center { text-align: center; }
+
+.text-align-left { text-align: start; }
+
+// Other
+.cursor-pointer { cursor: pointer };
+
+.text-red { color: red };
+
+.text-blue { color: $color-blue; }
+
+.hover-underline {
+  &:hover {
+    text-decoration: underline;
+  }
+}

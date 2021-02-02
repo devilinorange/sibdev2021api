@@ -1,0 +1,13 @@
+.login-form {
+  width: 510px;
+  height: 520px;
+  background: white;
+
+  padding: 48px 88px 60px;
+
+  &__title {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 500;
+  }
+}
